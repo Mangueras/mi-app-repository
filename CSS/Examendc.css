@@ -1,0 +1,43 @@
+.contenedor {
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.header {
+    grid-area: header;
+    background-color: rgb(21, 181, 181);
+    height:  150px;
+}
+.caja {
+    width: 800px;
+    height: 150px;
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 375px;
+    flex: auto;
+    margin: 15px;
+}
+
+button {
+    background-color: rgb(59, 220, 220);
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 610px;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+}
+.imagen {
+    position: relative;
+    left: -300px;
+}
+.box {
+    background-color: rgb(196, 196, 196);
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 6px;
+}

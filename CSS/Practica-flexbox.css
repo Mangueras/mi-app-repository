@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.contenedor {
+    width: 825px;
+    height: 505px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    position: relative;
+}
+.row {
+    text-align: center;
+}
+#a1 {
+    background-color: #0d9;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}

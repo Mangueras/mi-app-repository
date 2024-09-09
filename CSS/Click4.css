@@ -1,0 +1,7 @@
+.container {
+    flex-direction: column;
+}
+.header {
+    background-color: yellow;
+    left: 40px;
+}

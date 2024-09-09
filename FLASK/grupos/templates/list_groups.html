@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Grupos</title>
+    <style>
+        .group {
+            border: 4px solid rgb(12, 12, 12);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid rgb(63, 62, 62);
+            padding: 10px;
+        }
+        .title {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de grupos</h1>
+    {% for grupo in grupos %}
+    <section class="group">
+        <h3>Grupo {{ grupo.id }}</h3>
+        <table>
+            <tr>
+                <td class="title">Integrantes</td>
+                <td>
+                    <ul>
+                        {% for integrante in grupo.integrantes %}
+                        <li>{{ integrante }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Título del proyecto</td>
+                <td>{{ grupo.tema }}</td>
+            </tr>
+            <tr>
+                <td class="title">Descripción del proyecto</td>
+                <td>{{ grupo.descripcion }}</td>
+            </tr>
+        </table>
+    </section>
+    {% endfor %}
+</body>
+</html>

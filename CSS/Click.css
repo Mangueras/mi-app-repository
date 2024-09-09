@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+#button1 {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    top: -80px;
+    left: 870px;
+}
+.button2 {
+    padding: 10px 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    top: -20px;
+}
+#cabeza {
+    background-color: gray;
+    height: 50PX;
+}
+#texto1 {
+    position: relative;
+    left: -880px;
+    top: 10px;
+}

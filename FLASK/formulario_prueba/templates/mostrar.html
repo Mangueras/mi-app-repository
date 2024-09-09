@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Usuario</title>
+</head>
+<body>
+    <h1>Usuario:</h1>
+    <h3>Nombre: {{ session['nombre_usuario'] }}</h3>
+    <h3>G-mail: {{ session['gmail_usuario'] }}</h3>
+    <h2>Bienvenido, {{ session['nombre_usuario'] }}</h2>
+    <h3>Haz visitado la pagina {{ session['visitas'] }} veces</h3>
+    <button><a href="/destruir_sesion">Cerrar Sesion</a></button>
+    <button><a href="/agregar_visitas_2">Aumentar Visitas</a></button>
+    <button><a href="/borrar_visitas">Reiniciar Visitas</a></button>
+    <form action="/agregar_visitas" method="post">
+        <label for="visitas">Ingrese Numero :</label>
+        <input type="text" name="visitas" style="width: 15px;" required>
+        <input type="submit" value="mostrar_usuario" name="Agregar">
+    </form>
+</body>
+</html>

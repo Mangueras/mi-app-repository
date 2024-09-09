@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <h2>Crea un Usuario</h2>
+    <form action="/crear_usuario" method="post">
+        <label>Nombre :</label>
+        <input type="text" name="nombre">
+        <label>Gmail :</label>
+        <input type="text" name="gmail">
+        <input type="submit" value="crear_usuario">
+    </form>
+
+    <h2>Haz reiniciado la pagina {{ session['reinicio'] }} veces</h3>
+</body>
+</html>
